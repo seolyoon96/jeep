@@ -18,9 +18,9 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!--  swiper-->
-  <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Arya:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
   <!-- font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet"
@@ -43,13 +43,133 @@
 </head>
 <body>
   <div id="wrap">
-    <header>header</header>
+    <header id="header">
+      <h1 id="logo">
+        <a href="#"><img src="./image/logo.png" alt=""></a>
+      </h1>
+      <!-- logo -->
+
+      <nav id="gnb">
+        <ul class="menu01">
+          <li><a href="#">모델소개</a></li>
+          <li><a href="#">구입문의</a></li>
+          <li><a href="#">JEEP® LIFE</a></li>
+          <li><a href="#">서비스</a></li>
+          <li><a href="#">3D모델보기</a></li>
+        </ul>
+        <!-- menu01 -->
+
+        <ul class="menu02">
+          <li><a href="#">시승신청</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <input type="checkbox" name="btnMenu" id="btnMenu" class="blind" />
+          <label for="btnMenu" class="label-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="blind">전체메뉴 보기</span>
+          </label>
+        </ul>
+        <!-- menu02 -->
+      </nav>
+      <!-- gnb -->
+    </header>
     <!-- header -->
 
-    <main>main</main>
+    <div class="swiper slide-intro">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./image/slide 01.png" alt="">
+          <div class="slide-txt">
+            <div class="t-container">
+              <span>Granite Crystal Metallic</span> 
+              <strong>GLADIATOR ARMY STAR</strong>
+              <p>스타일리쉬한 바디킷과 디자인</p>
+
+              <button>시승신청</button>
+              <button>글래디에이터 아미 보기</button>
+            </div>
+          </div>
+          <!-- slide-txt -->
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./image/slide 02.png" alt="">
+          <div class="slide-txt">
+            <div class="t-container">
+              <span>강인함에 눈길을 사로잡는 스타일</span>
+              <strong>WRANGLER SNOW EDITION</strong>
+              <p>추운 겨울에도 전천후 성능을 발휘하는 정통 오프로더에 <br> 순백의 프리미엄 감성을 더한 랭글러 리미티드 에디션</p>
+          
+              <button>견적신청</button>
+              <button>딜러찾기</button>
+            </div>
+          </div>
+          <!-- slide-txt -->
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./image/slide 03.png" alt="">
+          <div class="slide-txt">
+            <div class="t-container">
+              <span>Since 1941</span>
+              <strong>시대를 초원한 지프의 아이콘</strong>
+              <p>WRANGLER '41' EDITION</p>
+          
+              <button>자세히 보기</button>
+              <button>견적신청</button>
+            </div>
+          </div>
+          <!-- slide-txt -->
+        </div>
+      </div>
+      <!-- swiper-wrapper -->
+      <div class="swiper-pagination"></div>
+      <!-- swiper-pagination -->
+    </div>
+    <!-- slide-intro -->
+
+    <main id="main">
+      <section class="sec01 sec-eft">
+        <div class="sec01-container">
+          <h2 class="sec01-title">MODELS</h2>
+          <div class="sec01-content">
+            <div class="slide-eft">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./image/MODELS 01.png" alt="">
+                    <div class="sec01-txt">
+                      <div class="sec01-cont"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./image/MODELS 02.png" alt="">
+                    <div class="sec01-txt">
+                      <div class="sec01-cont"></div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="./image/MODELS 03.png" alt="">
+                  </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+              <!-- swiper -->
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <!-- sec01-content -->
+        </div>
+      </section>
+      <!-- sec01 -->
+    </main>
     <!-- main -->
 
-    <footer>footer</footer>
+    <footer id="footer">footer</footer>
     <!-- footer -->
   </div>
   <!-- wrap -->
